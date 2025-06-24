@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Hfl Serviços Odontológicos</title>
+<style>
+  body {font-family:Arial,sans-serif;margin:0;padding:0;color:#333;}
+  header {background:#006699;color:#fff;padding:1rem;text-align:center;}
+  nav {margin:10px;}
+  nav button {margin:5px;padding:10px 15px;border:none;border-radius:4px;background:#004466;color:#fff;cursor:pointer;}
+  section {padding:2rem;display:none;}
+  section.active {display:block;}
+  footer {background:#eee;text-align:center;padding:1rem;margin-top:2rem;}
+  .btn {display:inline-block;margin-top:10px;padding:10px 20px;background:#006699;color:#fff;border:none;border-radius:4px;text-decoration:none;}
+</style>
+</head>
+<body>
+<header>
+  <h1>Hfl Serviços Odontológicos</h1>
+  <nav>
+    <button onclick="showSection('home')">Home</button>
+    <button onclick="showSection('sobre')">Sobre</button>
+    <button onclick="showSection('servicos')">Serviços</button>
+    <button onclick="showSection('contato')">Contato</button>
+  </nav>
+</header>
+
+<section id="home" class="active">
+  <h2>Bem-vindo à Hfl Serviços Odontológicos</h2>
+  <p>Clínica odontológica especializada em tratamentos modernos e atendimento humanizado, iniciada em maio de 2025 na Vila Salete, SP.</p>
+</section>
+
+<section id="sobre">
+  <h2>Sobre a Clínica</h2>
+  <p>A Hfl Serviços Odontológicos LTDA foi fundada em 15/05/2025 e atua com foco em qualidade e inovação odontológica. Sob a liderança de Henrique Fernandes Ladeira, oferecemos atendimento de excelência em São Paulo, com infraestrutura completa e equipe qualificada.</p>
+</section>
+
+<section id="servicos">
+  <h2>Serviços</h2>
+  <ul>
+    <li>Consultas e diagnóstico</li>
+    <li>Limpeza e profilaxia</li>
+    <li>Restaurações</li>
+    <li>Endodontia (tratamento de canal)</li>
+    <li>Ortodontia</li>
+    <li>Clareamento dental</li>
+    <li>Implantes e próteses</li>
+    <li>Atendimento móvel (domicílio corporativo)</li>
+  </ul>
+</section>
+
+<section id="contato">
+  <h2>Contato</h2>
+  <p><strong>Endereço:</strong> Rua Cirene Jorge Ribeiro, 397, Sala Fiscal 475776, Vila Salete, São Paulo – SP, CEP 03616‑040</p>
+  <p><strong>Tel./WhatsApp:</strong> <a href="tel:+5511999999999">(11) 99999‑9999</a></p>
+  <p><strong>E‑mail:</strong> <a href="mailto:ocik@ocik.com.br">ocik@ocik.com.br</a></p>
+  <a class="btn" href="https://wa.me/5511999999999" target="_blank">Fale no WhatsApp</a>
+</section>
+
+<footer>
+  &copy; 2025 Hfl Serviços Odontológicos LTDA | CNPJ 60.841.233/0001‑49
+</footer>
+
+<script>
+function showSection(id){
+  document.querySelectorAll('section').forEach(s => s.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+</script>
+</body>
+</html>
